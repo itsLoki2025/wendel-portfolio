@@ -23,6 +23,12 @@ function validateForm() {
     return true;
 }
 
+document.getElementById('hamburger-menu').addEventListener('click', function() {
+    const navLinks = document.getElementById('nav-links');
+    navLinks.classList.toggle('active');
+});
+
+
 document.getElementById("darkModeToggle")?.addEventListener("click", function() {
     document.body.classList.toggle("dark-mode");
 });
